@@ -1,0 +1,40 @@
+body * {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    backdrop-filter: blur(10px);
+}
+
+section {
+    background-color: black;
+    color: white;
+}
+
+.sect-desc {
+    padding: 5rem;
+}
+
+#titulo1 {
+    text-align: center;
+    padding: auto;
+}
+form {
+    background-color: black;
+}
+footer {
+    background-color: aqua;
+}
+
+/* seccion card */
+
+#titulo2 {
+text-align: center;
+padding: auto;
+}
