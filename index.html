@@ -68,20 +68,26 @@
 
     <section class="sect-desc">
         <div class="main" id="section1">
-            <h2 id="titulo1">¿QUIENES SOMOS?</h2>
+            <h2 id="titulo1">¿QUIÉNES SOMOS?</h2>
         </div>
         <div class="container text-center p-5">
             <div class="row align-items-center">
                 <div class="col">
-                    <i class="fa-solid fa-plane bg-info container p-1"></i>
+                    <button type="button" class="btn btn-info container p-1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Agencia de Viaje">
+                        <i class="fa-solid fa-plane" style="color: white;"></i>
+                    </button>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloremque libero facilis cupiditate labore provident suscipit reiciendis exercitationem voluptatibus eveniet nobis laudantium consequuntur debitis illum mollitia, aut cumque, atque vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquam placeat voluptates totam doloribus? Ipsam veniam dolorem quibusdam optio ut. Beatae harum esse fugiat sed minima iste eveniet quia quidem!</p>
                 </div>
                 <div class="col">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa esse odio illum natus, libero possimus molestias fuga? Ipsum, laboriosam et modi excepturi blanditiis delectus tempore necessitatibus doloremque fugit possimus iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur veritatis dolor reprehenderit error repudiandae sapiente ratione. Reprehenderit accusamus hic ducimus. Sapiente praesentium quidem enim vitae consequuntur ab deserunt dolore ducimus.</p>
-                    <i class="fa-solid fa-mountain-sun bg-info container p-1"></i>
+                    <button type="button" class="btn btn-info container p-1" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Grandes destinos">
+                        <i class="fa-solid fa-mountain-sun" style="color: white;"></i>
+                    </button>
                 </div>
                 <div class="col">
-                    <i class="fa-solid fa-route bg-info container p-1"></i>
+                    <button type="button" class="btn btn-info container p-1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Guía asegurada">
+                        <i class="fa-solid fa-route" style="color: white;"></i>
+                    </button>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus praesentium, in eaque quos temporibus qui velit illo fuga dignissimos dolorum, reiciendis sit accusantium repellat nulla deserunt dolores optio non? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem accusantium autem, unde maiores expedita doloremque suscipit eius iure, deserunt aperiam itaque in? Officiis ex, provident aliquid doloremque eius sapiente temporibus?</p>
                 </div>
             </div>
@@ -138,11 +144,11 @@
 <!-- Formulario -->
 <form>
     <div class="main" id="section3">
-        <h2>CONTACTO</h2>
+        <h2 id="titulo3">CONTACTO</h2>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col text-light">
                     <div class="mb-3">
                         <label for="exampleInputNombre" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="nombre">
@@ -151,31 +157,49 @@
                         <label for="exampleInputAsunto" class="form-label">Asunto</label>
                         <input type="text" class="form-control" id="asunto">
                     </div>
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                        <label for="floatingTextarea2">Mensaje</label>
+                    <div class="form">
+                        <label for="Textarea2">Mensaje</label>
+                        <textarea class="form-control" id="Textarea2" style="height: 200px"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary m-3">Enviar</button>
             </div>
         </div>
     </div>
 </form>
 
 <!-- Footer -->
-<footer>
-    <h3>VIAJES CHILE</h3>
-    
-    <i class="fa-brands fa-twitter"></i>
-    <i class="fa-brands fa-linkedin"></i>
-    <i class="fa-brands fa-github"></i>
-    <i class="fa-brands fa-facebook"></i>
-
+<footer class="footer">
+    <div class="container text-center">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3>VIAJES CHILE</h3>
+            </div>
+            <div class="col">
+                <i class="fa-brands fa-github" id="redes-soc"></i>
+                <i class="fa-brands fa-linkedin" id="redes-soc"></i>
+                <i class="fa-brands fa-twitter" id="redes-soc"></i>
+                <i class="fa-brands fa-facebook"id="redes-soc"></i>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <!-- Font Awesome -->
 <script src="https://kit.fontawesome.com/0c1cad2be7.js" crossorigin="anonymous"></script>
 <!-- JQuery -->
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $("p").dblclick(function(){
+            $(this).hide();
+        })
+        $("p").click(function(){
+            $(this).css({
+                "font-size": "0.5rem"
+            })
+    })
+
+        
+    </script>
 <!-- js -->
     <script src="assets/js/script.js"></script>
 </body>
